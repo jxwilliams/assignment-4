@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    ========================================
+    Campus Eats Project
+    Author: Jowuan Williams
+    Date: September 11
+    Description:
+      - Simple one-page blog about restaurants near Petty.
+      - Includes:
+          * Header with page title and links
+          * Quick Tips sidebar
+          * Intro section 
+          * 3 Restaurants, each with 3 dishes
+          * Footer with contact info
+    ========================================
+  -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Eats</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Campus Eats</h1>
+        <p>Quick food & drink picks near the Petty building.</p>
+        <!-- Simple links to jump to different parts of the page -->
+
+        <div>
+            <a href="#intro">Intro</a>
+            <a href="#spots">Spots</a>
+            <a href="#tips">Tips</a>
+            <a href="#contact">Contact</a>
+            <a href="#favorites">Favorites</a>
+        </div>
+    </header>
+
+    <div id="tips">
+        <h2>Quick Tips</h2>
+        <p>Watch for student discounts and lunch specials. Lines are longest 12–1:30pm, so mobile order when you can.
+        </p>
+    </div>
+    <!-- === Intro section  === -->
+
+    <div id="intro">
+        <h2>What this mini‑blog is about</h2>
+        <p>Welcome to Campus Eats, a short guide to places within a quick walk of Petty. I picked spots that are
+            affordable and easy for students. Each place lists three specific items so you can decide fast.</p>
+    </div>
+    <!-- === Restaurants  === -->
+
+    <div id="spots">
+        <div class="restaurant">
+            <h2>Tate Street Coffee House</h2>
+            <p>344 Tate st · Sandwiches & Coffee</p>
+            <img src="images/r1-storefront.jpg" alt="Front of Restaurant 1">
+            <p>small coffee shop, good setting to study in </p>
+                <div class="dish" data-name="Avocado Breakfast Bagel" data-price="7.95">                <img src="images/r1-dish1.jpg" alt="Avocado breakfast bagel">
+                <p><strong>Avocado Breakfast Bagel</strong> — Creamy and filling before class.
+                <p class="price">$5.25</p><button class="fav">Add to Favorites</button>
+            </div>
+            <div class="dish" data-name="Chicken Pesto Panini" data-price="7.95">
+                <img src="images/r1-dish2.jpg" alt="Chicken pesto panini">
+                <p><strong>Chicken Pesto Panini</strong> — Hot, melty, and fast.
+                <p class="price">$8.25</p><button class="fav">Add to Favorites</button>
+            </div>
+            <div class="dish" data-name="Iced Caramel Latte" data-price="7.95">
+                <img src="images/r1-dish3.jpg" alt="Iced caramel latte">
+                <p><strong>Iced Caramel Latte</strong> — Sweet but balanced.
+                <p class="price">$3.75</p><button class="fav">Add to Favorites</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant">
+        <h2>Crazy Mexico</h2>
+        <p>332 Tate St· Tacos & Bowls</p>
+        <img src="images/r2-storefront.jpg" alt="Front of Restaurant 2">
+        <p>Quick service with build‑your‑own options.</p>
+        <div class="dishes">
+            <div class="dish" data-name="Chicken Street Tacos" data-price="7.95">
+                <p><strong>Chicken Street Tacos</strong> — Simple and flavorful.
+                <p class="price">$10.99</p><button class="fav">Add to Favorites</button>
+            </div>
+            <div class="dish" data-name="Veggie Burrito Bowl" data-price="7.95">
+                <p><strong>Veggie Burrito Bowl</strong> — Good vegetarian option.
+                <p class="price">$7.95</p><button class="fav">Add to Favorites</button>
+            </div>
+            <div class="dish" data-name="Chips & Queso" data-price="7.95">
+                <p><strong>Chips & Queso</strong> — Shareable side.
+                <p class="price">$8.00</p><button class="fav">Add to Favorites</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant">
+        <h2>Ghong Chai</h2>
+        <p>344 Tate st · Boba & Desserts</p>
+        <img src="images/r3-storefront.jpg" alt="Front of Restaurant 3">
+        <p>Good for an afternoon pick‑me‑up; many flavors and sweetness levels.</p>
+        <div class="dishes">
+            <div class="dish" data-name="Brown Sugar Boba" data-price="7.95">
+                <p><strong>Brown Sugar Boba</strong> — Chewy pearls, caramel notes.
+                <p class="price">$5.95</p><button class="fav">Add to Favorites</button>
+                <div class="dish" data-name="Matcha Latte" data-price="7.95">
+                    <p><strong>Matcha Latte</strong> — Try 50% sweetness.
+                    <p class="price">$4.65</p><button class="fav">Add to Favorites</button>
+                </div>
+                <div class="dish" data-name="Taiyaki Ice Cream" data-price="7.95">
+                    <p><strong>Taiyaki Ice Cream</strong> — Warm cone with soft‑serve.
+                    <p class="price">$9.95</p><button class="fav">Add to Favorites</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="favorites">
+        <h2>Favorites</h2>
+        <ul id="fav-list"></ul>
+        <p>Total: $<span id="fav-total">0.00</span></p>
+    </div>
+    <footer id="contact">
+        <p>Questions or a rec to add? Email <a href="jxwilliams@uncg.edu">jxwilliams@uncg.edu</a>.</p>
+    </footer>
+</body>
+
+</html>

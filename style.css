@@ -1,0 +1,67 @@
+
+
+body {
+  background: white;
+  color: black;
+}
+
+/* Page layout */
+header, footer, div {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid gray;
+}
+
+header h1 {
+  margin: 0;
+}
+
+
+
+#tips, #intro, #spots, footer {
+  background: white;
+  border: 1px solid gray;
+  margin-top: 12px;
+  padding: 12px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 6px;
+}
+
+
+.restaurant {
+  margin-top: 12px;
+  background:white;
+  border: 1px solid white;
+  padding: 12px;
+}
+
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.dish {
+  display: flex;
+  border: 1px solid gray;
+  background: white;
+  padding: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: gray;
+  border-top: 1px solid white;
+}
